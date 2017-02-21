@@ -52,17 +52,16 @@ You can use Postman or Curl
 <br>
 
 
-<>http://localhost:8080/numSeatsAvailable</b>
+<b>http://localhost:8080/numSeatsAvailable</b>
 <br>
-<b>Sample Response:</b>
+<b>Sample Response for Find Number of Seats Available:</b>
 <br>
 100
 <br>
 
-<b>http://localhost:8080/hold/></b>
+<b>http://localhost:8080/hold</b>
 <br>
-<b>Sample Request Body:</b>
-<br>
+<b>Sample Request Body for Hold Seats:</b>
 <br>
 {
   "numSeats": 10,
@@ -71,7 +70,7 @@ You can use Postman or Curl
 <br>
 <br>
 <br>
-<b>Sample Response Body:</b>
+<b>Sample Response Body for Hold Seats:</b>
 <br>
 <br>
 {
@@ -85,7 +84,7 @@ You can use Postman or Curl
 <b>http://localhost:8080/reserve</b>
 <br>
 <br>
-<b>Sample Request Body:</b>
+<b>Sample Request Body for Reserve Seats:</b>
 <br>
 <br>
 {
@@ -95,7 +94,7 @@ You can use Postman or Curl
 <br>
 <br>
 <br>
-<b>Sample Response Body:</b>
+<b>Sample Response Body for Reserve Seats:</b>
 <br>
 <br>
 a2267cfc-076f-42d8-a8e1-0a697c47e9d4
