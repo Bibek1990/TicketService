@@ -21,6 +21,7 @@ Implements a simple ticket service that facilitates the discovery, temporary hol
 <br>
 
 
+
 <b>Assumptions:</b>
 
 1)	Every seat is assigned a SeatId
@@ -32,6 +33,7 @@ Implements a simple ticket service that facilitates the discovery, temporary hol
 4)	The hold seats are not automatically replenished to available section until a request comes through
 
 <br>
+
 
 
 <b>To Run the program:</b>
@@ -50,14 +52,14 @@ You can use Postman or Curl
 <br>
 
 
-<a href="http://localhost:8080/numSeatsAvailable"/>
+<b>http://localhost:8080/numSeatsAvailable</b>
 <br>
 <b>Sample Response:</b>
 <br>
 100
 <br>
 
-<a href="http://localhost:8080/hold/>
+<b>href="http://localhost:8080/hold/></b>
 
 <b>Sample Request Body:</b>
 <br>
@@ -78,7 +80,7 @@ You can use Postman or Curl
 }
 <br>
 
-<a href="http://localhost:8080/reserve/>
+<b>http://localhost:8080/reserve</b>
 
 <br>
 <b>Sample Request Body:</b>
