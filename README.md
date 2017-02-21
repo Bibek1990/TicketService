@@ -52,74 +52,78 @@ You can use Postman or Curl
 <br>
 
 
-<b>http://localhost:8080/numSeatsAvailable</b>
+<>http://localhost:8080/numSeatsAvailable</b>
 <br>
 <b>Sample Response:</b>
 <br>
 100
 <br>
 
-<b>href="http://localhost:8080/hold/></b>
-
+<b>http://localhost:8080/hold/></b>
+<br>
 <b>Sample Request Body:</b>
 <br>
-
+<br>
 {
   "numSeats": 10,
   "customerEmail": "sariph1@gmail.com"
 }
 <br>
-
+<br>
+<br>
 <b>Sample Response Body:</b>
 <br>
-
+<br>
 {
   "seatHoldId": 1,
   "seatHoldTimeStamp": 1487657339,
   "customerEmail": "sariph1@gmail.com"
 }
 <br>
-
+<br>
+<br>
 <b>http://localhost:8080/reserve</b>
-
+<br>
 <br>
 <b>Sample Request Body:</b>
 <br>
-
+<br>
 {
   "seatHoldId":1,
   "customerEmail": "sariph1@gmail.com"
 }
 <br>
-
+<br>
+<br>
 <b>Sample Response Body:</b>
 <br>
-
+<br>
 a2267cfc-076f-42d8-a8e1-0a697c47e9d4
 <br>
 <br>
 <br>
-
+<br>
 <b>To Run the test cases:</b>
-
+<br>
 Cd into the particular directory where project is (in a different terminal than one that you are running the program)
-
+<br>
 Run mvn test
-
+<br>
 [Please make sure you use a different terminal than one where you running spring boot because the test cases will run in random port while calling the server]
 <br>
-
+<br>
 <b>How Program was developed:</b>
-
+<br>
 <b>Three different ConcurrentHashMap is used</b>
-
+<br>
 1)	Map of Hold Seats
-
+<br>
 2)	Map of Number of Available Seats
-
+<br>
 3)	Map of All the Reserved Seats
 <br>
-
+<br>
 Every time client request for Hold or Reserve or Number of Available Seats the program will go 
 through the Hold Seats Maps and see if any of the seat has expired and moves them to Number of Available Seats
+<br>
 <br>
