@@ -113,7 +113,7 @@ Run mvn test
 <br>
 <b>How Program was developed:</b>
 <br>
-<b>Three different ConcurrentHashMap is used</b>
+Three different ConcurrentHashMap is used
 <br>
 1)	Map of Hold Seats
 <br>
